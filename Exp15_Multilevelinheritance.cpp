@@ -4,58 +4,62 @@
     Program  : MULTILEVEL INHERITANCE
 */
 #include <iostream>
-#include<cstring>
+#include <cstring>
 
 using namespace std;
 
-
-class STUDENT 
+class STUDENT
 {
 protected:
     string name;
     int rollno;
-public:
-STUDENT(){
-    cout<<"Name : ";
-    cin>>name;
-    cout<<"Roll No: ";
-    cin>>rollno;
 
-}
+public:
+    STUDENT()
+    {
+        cout << "Name : ";
+        cin >> name;
+        cout << "Roll No: ";
+        cin >> rollno;
+    }
 };
-class EXAM  : public STUDENT
+class EXAM : public STUDENT
 {
 protected:
     float marks[6];
+
 public:
-    EXAM(){
-         for(int i=0;i<6;i++){
-             cout<<"Marks in Subject "<<i+1<<": ";
-             cin>>marks[i];
-         }
+    EXAM()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            cout << "Marks in Subject " << i + 1 << ": ";
+            cin >> marks[i];
+        }
     }
 };
-class RESULT  : public EXAM
+class RESULT : public EXAM
 {
 private:
-   float total_mark;
+    float total_mark;
+
 public:
-    RESULT(){
-        total_mark= marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5];
-        cout<<"\nName :"<<name<<"\t"<<"Roll No : "<<rollno<<"\n";
-        for(int i =0;i<6;i++){
-            cout<<"\nSubject "<<i+1<<" : "<<marks[i];
+    RESULT()
+    {
+        total_mark = marks[0] + marks[1] + marks[2] + marks[3] + marks[4] + marks[5];
+        cout << "\nName :" << name << "\t"
+             << "Roll No : " << rollno << "\n";
+        for (int i = 0; i < 6; i++)
+        {
+            cout << "\nSubject " << i + 1 << " : " << marks[i];
         }
-        cout<<"\n-----------------";
-        cout<<"\nTotal Marks : "<<total_mark;
-
-        
-
+        cout << "\n-----------------";
+        cout << "\nTotal Marks : " << total_mark;
     }
 };
 int main()
 {
-    RESULT a;    
+    RESULT a;
     return 0;
 }
 /* 

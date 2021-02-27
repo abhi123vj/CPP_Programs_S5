@@ -4,7 +4,7 @@
     Program  : SINGLE INHERITANCE
 */
 #include <iostream>
-#include<cstring>
+#include <cstring>
 
 using namespace std;
 

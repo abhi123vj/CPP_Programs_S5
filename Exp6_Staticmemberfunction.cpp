@@ -24,7 +24,7 @@ public:
         cout << "count:" << count << "\n";
     }
 };
-int test ::count;
+int test ::count=0;
 int main()
 {
     test t1, t2;

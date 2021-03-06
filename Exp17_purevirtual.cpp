@@ -112,30 +112,30 @@ int main()
 		cin >> ch;
 		switch (ch)
 		{
-		case 1:
-			cout << "\nEnter an element to be stored: ";
-			cin >> z;
-			l = &stk;
-			l->store(z);
-			break;
-		case 2:
-			l = &stk;
-			l->retrieve();
-			break;
-		case 3:
-			cout << "\nEnter an element to be stored: ";
-			cin >> z;
-			l = &que;
-			l->store(z);
-			break;
-		case 4:
-			l = &que;
-			l->retrieve();
-			break;
-		case 5:
-			break;
-		default:
-			cout << "\nInvalid Entry";
+			case 1:
+				cout << "\nEnter an element to be stored: ";
+				cin >> z;
+				l = &stk;
+				l->store(z);
+				break;
+			case 2:
+				l = &stk;
+				l->retrieve();
+				break;
+			case 3:
+				cout << "\nEnter an element to be stored: ";
+				cin >> z;
+				l = &que;
+				l->store(z);
+				break;
+			case 4:
+				l = &que;
+				l->retrieve();
+				break;
+			case 5:
+				break;
+			default:
+				cout << "\nInvalid Entry";
 		}
 	} while (ch != 5);
 	return 0;
@@ -144,16 +144,6 @@ int main()
 /*
 OUTPUT
 ------
-	Enter size of stack and queue : 4 5
-
-		Menu
-	1.Stack Store
-	2.Stack Retrieve
-	3.Queue Store
-	4.Queue Retrieve
-	5.Exit
-	Choose from (1-5) : ^C
-	s5cs42@sslab-ThinkCentre-M55e:~/Desktop/Anantha Raman S5 cse$ ./a.out
 	Enter size of stack and queue : 3 3
 
 		Menu

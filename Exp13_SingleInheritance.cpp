@@ -4,14 +4,13 @@
     Program  : SINGLE INHERITANCE
 */
 #include <iostream>
-#include <cstring>
+#include <string>
 
 using namespace std;
 
 const int MAX = 100;
 
 class Basic_info
-
 {
 private:
     string name;
@@ -23,7 +22,6 @@ public:
     void display();
 };
 class Physical_fit : public Basic_info
-
 {
 private:
     float height;
@@ -36,31 +34,34 @@ public:
 void Basic_info::getdata()
 {
     cout << "Enter a name :";
-    cin >> name;
+    getline(cin, name); 
+    getline(cin, name); 
     cout << "Roll no: ";
     cin >> rollno;
     cout << "Sex: ";
-    cin >> sex;
+    getline(cin,sex);
+    getline(cin,sex);
+
 }
 void Basic_info::display()
 {
-    cout << name << "\t";
+    cout << name << "\t\t";
     cout << rollno << "\t";
     cout << sex << "\t";
 }
 void Physical_fit::getdata()
 {
     Basic_info::getdata();
-    cout << "Height : ";
+    cout << "Height (cm) : ";
     cin >> height;
-    cout << "weight : ";
+    cout << "weight (Kg): ";
     cin >> weight;
 }
 void Physical_fit::display()
 {
     Basic_info::display();
-    cout << height << "\t";
-    cout << weight << " ";
+    cout << height << "cm \t";
+    cout << weight << "Kg \t";
 }
 int main()
 {
@@ -74,46 +75,60 @@ int main()
         cout << "Record :" << i + 1 << endl;
         a[i].getdata();
     }
-    cout << "______________________________________\n";
+    cout << "    _______________________________________________________\n";
     cout << "Name\tRollNo\tSex\tHeight\tWeight\n";
-    cout << "______________________________________\n";
+    cout << "    _______________________________________________________\n";
     for (i = 0; i < n; i++)
     {
         a[i].display();
         cout << endl;
     }
-    cout << "______________________________________\n";
+    cout << "    _______________________________________________________\n";
     return 0;
 }
 /*
 OUTPUT
 ------
     How many students
-    3
+    5
     Enter the following infromation
     Record :1
-    Enter a name :Abhi
+    Enter a name :S Abhiram
     Roll no: 36
     Sex: Male
-    Height : 175
-    weight : 60
+    Height (cm) : 175
+    weight (Kg): 68
     Record :2
-    Enter a name :Ram
-    Roll no: 32
+    Enter a name :Joveal k
+    Roll no: 29
     Sex: Male
-    Height : 150
-    weight : 57
+    Height (cm) : 170
+    weight (Kg): 62
     Record :3
-    Enter a name :Kichu
-    Roll no: 24
+    Enter a name :Ashly Rajan
+    Roll no: 26         
     Sex: Female
-    Height : 163
-    weight : 59
-   ______________________________________
-    Name    RollNo  Sex     Height  Weight
-    ______________________________________
-    Abhi    36      Male    175     60
-    Ram     32      Male    150     57 
-    Kichu   24      Female  163     59
-    ______________________________________
+    Height (cm) : 150
+    weight (Kg): 53
+    Record :4
+    Enter a name :Karthika  
+    Roll no: 17
+    Sex: Female
+    Height (cm) : 160
+    weight (Kg): 50
+    Record :5
+    Enter a name :Anand Ashwin Kv
+    Roll no: 36
+    Sex: Male
+    Height (cm) : 173
+    weight (Kg): 70
+    _______________________________________________________
+    Name                    RollNo  Sex     Height  Weight
+    _______________________________________________________
+    S Abhiram               36      Male    175 cm   68 Kg
+    Joveal k                29      Male    170 cm   62 Kg
+    Ashly Rajan             26      Female  150 cm   53 Kg
+    Karthika                17      Female  160 cm   50 Kg
+    Anand Ashwin Kv         36      Male    173 cm   70 Kg
+    _______________________________________________________
 */

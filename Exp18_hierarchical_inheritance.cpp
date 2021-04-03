@@ -1,6 +1,6 @@
 /*
     Name : S Abhiram
-    Roll no : 118404036
+    Roll no : 18404036
     Program  : HIERARCHICAL INHERITANCE
 */
 #include <iostream>
@@ -32,7 +32,7 @@ public:
         cout << "\nArea of the triangle is " << area << " square unit";
     }
 };
-class RECTANGLE : public SHAPE
+class RECTANGLE :  public SHAPE
 {
     double area;
 

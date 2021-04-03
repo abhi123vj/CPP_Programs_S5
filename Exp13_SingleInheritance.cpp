@@ -1,6 +1,6 @@
 /*
     Name : S Abhiram
-    Roll no : 118404036
+    Roll no : 18404036
     Program  : SINGLE INHERITANCE
 */
 #include <iostream>
@@ -105,20 +105,20 @@ OUTPUT
     Height (cm) : 170
     weight (Kg): 62
     Record :3
-    Enter a name :Ashly Rajan
+    Enter a name :Ashly R
     Roll no: 26         
     Sex: Female
     Height (cm) : 150
     weight (Kg): 53
     Record :4
-    Enter a name :Karthika  
+    Enter a name :Aishu  
     Roll no: 17
     Sex: Female
     Height (cm) : 160
     weight (Kg): 50
     Record :5
-    Enter a name :Anand Ashwin Kv
-    Roll no: 36
+    Enter a name :TR Akash
+    Roll no: 46
     Sex: Male
     Height (cm) : 173
     weight (Kg): 70
@@ -127,8 +127,8 @@ OUTPUT
     _______________________________________________________
     S Abhiram               36      Male    175 cm   68 Kg
     Joveal k                29      Male    170 cm   62 Kg
-    Ashly Rajan             26      Female  150 cm   53 Kg
-    Karthika                17      Female  160 cm   50 Kg
-    Anand Ashwin Kv         36      Male    173 cm   70 Kg
+    Ashly R                 26      Female  150 cm   53 Kg
+    Aishu                   17      Female  160 cm   50 Kg
+    TR Akash                46      Male    173 cm   70 Kg
     _______________________________________________________
 */
